@@ -1,0 +1,25 @@
+{
+  "name": "@bpetryshyn/spc-amqp-client",
+  "version": "1.0.0",
+  "description": "SPC AMQP client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BohdanPetryshyn/spc-amqp-client.git"
+  },
+  "keywords": [
+    "amqplib"
+  ],
+  "author": "BohdanPetryshyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BohdanPetryshyn/spc-amqp-client/issues"
+  },
+  "homepage": "https://github.com/BohdanPetryshyn/spc-amqp-client#readme",
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  }
+}
