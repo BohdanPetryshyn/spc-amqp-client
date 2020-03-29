@@ -1,6 +1,6 @@
 {
   "name": "@bpetryshyn/spc-amqp-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SPC AMQP client",
   "main": "index.js",
   "scripts": {
