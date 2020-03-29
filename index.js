@@ -1,6 +1,7 @@
 const amqplib = require('amqplib');
 
 const publishMessage = require('./publishMessage');
+const createMessageConsumer = require('./createMessageConsumer');
 
 const MESSAGE_EXCHANGE_NAME = 'spc-message-exchange';
 
@@ -12,6 +13,7 @@ module.exports = async host => {
 
   return {
     publishMessage: publishMessage(channel),
+    createMessageConsumer: createMessageConsumer(channel),
   };
 };
 
