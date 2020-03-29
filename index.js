@@ -16,4 +16,4 @@ module.exports = async host => {
   };
 };
 
-exports.MESSAGE_EXCHANGE_NAME = MESSAGE_EXCHANGE_NAME;
+module.exports.MESSAGE_EXCHANGE_NAME = MESSAGE_EXCHANGE_NAME;
