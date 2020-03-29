@@ -18,3 +18,5 @@ const connectAmqp = host => {
       });
   });
 };
+
+module.exports = connectAmqp;
