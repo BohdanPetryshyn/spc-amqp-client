@@ -5,7 +5,7 @@ module.exports = channel => async callback => {
   const queueName = `message-consumer-${id}`;
 
   await channel.assertQueue(queueName, { exclusive: true });
-  await channel.bindQueue(queueName, MESSAGE_EXCHANGE_NAME);
+  await channel.bindQueue(queueName, 'spc-message-exchange');
 
   channel.consume(queueName, msg => {
     const message = JSON.parse(msg.content.toString());
