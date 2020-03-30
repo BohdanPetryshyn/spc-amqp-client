@@ -15,5 +15,3 @@ module.exports = async host => {
     createMessageConsumer: createMessageConsumer(channel),
   };
 };
-
-module.exports.MESSAGE_EXCHANGE_NAME = MESSAGE_EXCHANGE_NAME;
