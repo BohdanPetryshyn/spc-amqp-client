@@ -2,7 +2,7 @@ const connectAmqp = require('./connectAmqp');
 const publishMessage = require('./publishMessage');
 const createMessageConsumer = require('./createMessageConsumer');
 
-const MESSAGE_EXCHANGE_NAME = 'spc-message-exchange';
+const MESSAGE_EXCHANGE_NAME = require('./config');
 
 module.exports = async host => {
   const connection = await connectAmqp(host);
