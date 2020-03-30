@@ -2,13 +2,13 @@ const connectAmqp = require('./connectAmqp');
 const publishMessage = require('./publishMessage');
 const createMessageConsumer = require('./createMessageConsumer');
 
-const { MESSAGE_EXCHANGE_NAME } = require('./config');
+const { AMQP_MESSAGE_EXCHANGE_NAME } = require('./config');
 
 module.exports = async host => {
   const connection = await connectAmqp(host);
   const channel = await connection.createChannel();
 
-  await channel.assertExchange(MESSAGE_EXCHANGE_NAME);
+  await channel.assertExchange(AMQP_MESSAGE_EXCHANGE_NAME);
 
   return {
     publishMessage: publishMessage(channel),
