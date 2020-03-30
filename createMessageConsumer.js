@@ -1,4 +1,4 @@
-const MESSAGE_EXCHANGE_NAME = require('./config');
+const { MESSAGE_EXCHANGE_NAME } = require('./config');
 
 module.exports = channel => async callback => {
   const id = Math.random();
