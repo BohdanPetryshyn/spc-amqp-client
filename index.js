@@ -1,6 +1,7 @@
 const connectAmqp = require('./connectAmqp');
 const publishMessage = require('./publishMessage');
 const createMessageConsumer = require('./createMessageConsumer');
+const createPersistentMessageConsumer = require('./createPersistentMessageConsumer');
 
 const { AMQP_MESSAGE_EXCHANGE_NAME } = require('./config');
 
@@ -13,5 +14,6 @@ module.exports = async host => {
   return {
     publishMessage: publishMessage(channel),
     createMessageConsumer: createMessageConsumer(channel),
+    createPersistentMessageConsumer: createPersistentMessageConsumer(channel),
   };
 };
